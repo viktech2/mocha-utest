@@ -1,0 +1,24 @@
+{
+  "name": "mochatest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha ./test/testSample.js || true",
+    "test-impp": "mocha ./test/module/* || true",
+    "test-project": "mocha ./test/module/project.test.js || true",
+    "test-flow": "mocha ./test/module/flow.test.js || true",
+    "test-task": "mocha ./test/module/task.test.js || true",
+    "test-job": "mocha ./test/module/job.test.js || true"
+  },
+  "author": "Vikash S",
+  "license": "ISC",
+  "dependencies": {
+    "node-env-file": "^0.1.8"
+  }
+}
