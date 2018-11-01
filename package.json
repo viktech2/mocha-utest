@@ -9,7 +9,7 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha ./test/testSample.js || true",
+    "test": "mocha ./test/testSample.js --reporter mocha-junit-reporter --reporter-options mochaFile=./report/file.xml || true",
     "test-impp": "mocha ./test/module/* || true",
     "test-project": "mocha ./test/module/project.test.js || true",
     "test-flow": "mocha ./test/module/flow.test.js || true",
