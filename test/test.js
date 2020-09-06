@@ -19,7 +19,7 @@ describe('iMPP', function () {
 
     describe('- All Projects/Engagement', () => {
         it('It should get project/engagement list', (done) => {
-            let path = '/impp/imerit/project/engagement/list/0';
+            let path = process.env.BASE + '/project/engagement/list/0';
 
             chai
                 .request(process.env.HOST)
@@ -47,7 +47,7 @@ describe('iMPP', function () {
 
 
         it('It should get project (NAP) details', (done) => {
-            let path = '/impp/imerit/project/details/view/0';
+            let path = process.env.BASE + '/project/details/view/0';
 
             chai
                 .request(process.env.HOST)
@@ -66,7 +66,7 @@ describe('iMPP', function () {
 
 
         it('It should get engagement (NAP) details', (done) => {
-            let path = '/impp/imerit/platform/engagement/details/0';
+            let path = process.env.BASE + '/platform/engagement/details/0';
 
             chai
                 .request(process.env.HOST)
